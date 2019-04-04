@@ -13,26 +13,6 @@
       ]
     }
   },
-  "buildDirs": {
-    "test": {
-      "require": [
-        "pesy-new/library",
-        "rely.lib"
-      ],
-      "bin": {
-        "TestPesyNew.exe": "TestPesyNew.re"
-      }
-    },
-    "library": {},
-    "executable": {
-      "require": [
-        "pesy-new/library"
-      ],
-      "bin": {
-        "PesyNewApp.exe": "PesyNewApp.re"
-      }
-    }
-  },
   "scripts": {
     "test": "esy b dune runtest"
   },
@@ -41,13 +21,9 @@
     "@esy-ocaml/reason": "*",
     "refmterr": "*",
     "ocaml": "~4.6.0",
-    "pesy": "*",
     "@reason-native/rely": "*"
   },
   "devDependencies": {
     "@opam/merlin": "*"
-  },
-  "resolutions": {
-    "pesy": "link:../../esy/pesy"
   }
 }
