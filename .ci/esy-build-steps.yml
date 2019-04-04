@@ -6,7 +6,7 @@ steps:
     inputs:
       versionSpec: '8.9'
   - script: npm install -g esy@0.4.3
-    displayName: 'npm install -g esy@0.4.3'
+    displayName: 'npm install -g esy@latest'
   - script: esy install
     displayName: 'esy install'
   - script: esy build
